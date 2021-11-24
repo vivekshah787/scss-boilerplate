@@ -1,0 +1,120 @@
+/*Common CSS Start*/
+.section-caption {
+    text-align: center;
+    h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: $text-black;
+        margin-bottom: 15px;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        color: #7A7A7A;
+        margin-bottom: 0px;
+    }
+}
+/*Common CSS End*/
+/*Hero section CSS Start*/
+.hero-section {
+    background: $green-gradient-bg;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;        
+        background-image: url('../../img/hero-wave-vector.png');      
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }        
+    
+}
+.hero-content-section {
+    position: relative;
+    margin-bottom: 90px;
+    z-index: 10;
+    &::before {
+        content: '';
+        position: absolute;        
+        width: 100%;
+        height: 134%;
+        background-image: url('../../img/top-circle.png'),    
+        url('../../img/top-right-dots.png'),
+        url('../../img/bottom-right-circle.png'),
+        url('../../img/bottom-dots.png');
+        background-position: 52% 0%,89% 11%,92% 96%,45% 99%;
+        top: -66px;
+        background-repeat: no-repeat;
+        opacity: 0.5; 
+        
+    }
+    .hero-left {
+        h1 {
+            font-size: 61px;
+            line-height: 73px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $text-white;
+        }    
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            color: $text-white;
+            line-height: 31px;
+        }
+    } 
+    
+}
+
+/*Hero section CSS End*/
+
+/*OWl section CSS Start*/
+.module-section {
+    padding: 50px 0px;
+    .module-carousel {
+        .module-content {
+            h4 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 45px;
+                color: #1f1f3c;
+            }
+            p {
+                font-size: 16px;
+                line-height: 27px;
+                color: #7A7A7A;
+                margin-bottom: 0;
+            }
+        }        
+
+    }
+}
+/*OWl section CSS End*/
+
+
+
+//Large responsive media
+@media (max-width: 1440px) { 
+    
+}
+
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(lg) { 
+     
+}
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) { 
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {  
+    
+}

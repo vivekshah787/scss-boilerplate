@@ -1,0 +1,28 @@
+
+/*variables scss*/
+@import "helper/variables";
+
+/*mixins scss*/
+@import "helper/mixins";
+
+/*vendor scss*/
+@import "vendor/fontawesome/scss/fontawesome.scss"; 
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/owlcarousel/owl.carousel";
+
+
+
+/*component scss*/
+@import "component/typography";
+@import "component/layout";
+@import "component/header";
+@import "component/button";
+@import "component/footer";
+@import "component/modal";
+
+
+
+
+// /*Pages scss*/
+@import "pages/home";
+

@@ -1,0 +1,41 @@
+/*breakpoints*/
+$breakpoints: (phonexs: 480px,
+    phone: 640px,
+    tablet: 768px,
+    tabletl:992px,
+    desktop: 1024px,
+    desktopl:1280px,
+    desktopxl:1366px,
+    largedesktop:1500px) !default;
+
+
+/*text color variables*/
+
+$text-green:#00B9B6;
+$text-black:#000000;
+$text-white:#fff;
+
+/*background color variables*/
+
+/*button background color variables*/
+$btn-bg-blue:#281E74;
+$btn-bg-grey:#C7CED9;
+/*main background color*/
+$body-bg-color:#fff;
+
+/*Header tags css*/
+$green-gradient-bg:linear-gradient(98.95deg, #013265 5.79%, #067573 99.77%);
+$page-title:#202731;
+$section-title-color:#202731;
+$sub-section-title-color:#858C97;
+
+/*Label css*/
+$labelColor:#202731;
+$input-border:#CFCFCF;
+
+/*Footer CSS*/
+$footer-bg:#F6F7F9;
+// Variables for navigation
+
+/*image url*/
+$imagePath:'../../../assets/img';

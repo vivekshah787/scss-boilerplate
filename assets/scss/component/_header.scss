@@ -1,0 +1,43 @@
+.header-section {    
+    padding: 28px 0 0 0;
+    margin-bottom: 90px;
+    .navbar {
+        padding: 0px;
+        .navbar-collapse {
+            ul {
+                li {
+                    margin-right: 25px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    a {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $text-white;
+                        padding: 0px;
+                        &.nav-button {
+                            padding: 8px 24px;
+                            text-transform: uppercase;
+                            background: #00B9B6;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) { 
+       
+}
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+    
+}

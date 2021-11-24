@@ -1,0 +1,75 @@
+.btn {
+
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s, border 0.3s ease 0s; 
+  padding: 14px 15px;
+  font-weight: bold;
+  &:hover,&:focus,&:active {
+    outline: 0 !important;
+    box-shadow: none !important;
+  } 
+
+  &.btn-primary {
+    
+
+    &:hover,&:active {
+      
+    }
+
+
+  }
+
+  &.btn-secondary {
+    
+    &:hover,&:active {
+      
+
+    }
+
+  }
+  &.btn-success-add {
+    
+    &:hover,&:active {
+      
+    }
+  }
+  &.btn-danger-remove {
+    
+    i {
+      
+    }
+    &.delete-import {
+      margin-top: 30px;
+    }
+  }
+  &.btn-primary-autofill {
+    
+    &:hover,&:active {
+      
+    }
+  }
+
+
+  &.btn-lg {
+    padding: 10px 25px;
+    font-size: 24px;
+  }
+
+}
+
+//Large responsive media
+@media (max-width: 1440px) { 
+  .btn {    
+      padding: 8px 15px;       
+  } 
+}
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(lg) {
+  .btn {    
+    &.btn-success-add {
+      font-size: 12px;
+    }
+  }
+
+}

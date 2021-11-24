@@ -1,0 +1,85 @@
+.ui-datepicker .ui-datepicker-next span,
+.ui-datepicker .ui-datepicker-prev span {
+    @include fa();
+    text-indent: 0;
+
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+    &:before {
+        content: "\f0a8";
+    }
+}
+
+.ui-datepicker .ui-datepicker-next span {
+    &:before {
+        content: "\f0a9";
+    }
+}
+
+.ui-datepicker-prev-hover,
+.ui-datepicker-next-hover {
+    border: none !important;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 2px;
+    top: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 2px;
+    top: 2px;
+}
+
+.ui-widget.ui-widget-content {
+    padding: 10px;
+    width: 310px;
+
+
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+    text-align: center;
+    border: none !important;
+
+    &.ui-state-hover {
+        border: none;
+    }
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background: no-repeat;
+    border: none;
+}
+
+
+
+.datepicker-input {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 23px;
+        color: #d1d1d1;
+    }
+
+    .datepicker {
+        padding-right: 35px;
+    }
+}
+
+
+.ui-datepicker-month {
+    margin-right: 5px !important;
+    border: 1px solid #c6c6c6;
+    padding: 3px;
+}
+
+.ui-datepicker-year {
+    border: 1px solid #c6c6c6;
+    padding: 3px;
+}

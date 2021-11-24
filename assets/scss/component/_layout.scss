@@ -1,0 +1,270 @@
+html {
+  // font-size: 62.5%;
+  /* Sets up the Base 10 stuff */
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;  
+  font-family: 'OpenSans';
+  font-weight: 400;
+  // -ms-font-feature-settings: normal;
+  background-color: $body-bg-color;
+  background-repeat: repeat;
+  color: #575757;  
+  height: 100%;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  margin-top: 0px !important;
+  margin-bottom: 0.5em;
+}
+
+.h1,
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+  color: $page-title;  
+
+  @include media("<tablet") {
+    font-size: 25px;
+    line-height: 28px;    
+  }
+}
+
+.h2,
+h2 {
+  font-size: 23px;
+  line-height: 25px;
+  color: $section-title-color;
+  margin-top: 20px;
+
+  @include media("<tablet") {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.h3,
+h3 {
+  font-size: 20px;
+  color: $sub-section-title-color;
+  line-height: 24px;
+  
+  @include media("<tablet") {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.h4,
+h4 {
+  font-size: 18px;
+  line-height: 21px;
+
+  @include media("<tablet") {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.h5,
+h5 {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.h6,
+h6 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 60%;
+  font-weight: 400;
+}
+
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #79cdcd;
+  }
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  // background: none;
+}
+
+button:hover,
+button:focus,
+button:active {
+  outline: none !important;
+  // background: none;
+}
+
+input {
+  font-size: 13px;
+}
+
+a:focus {
+  outline: 0;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+label,
+.label {
+  color: $labelColor;
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+  height: 1px;
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*list style disc css*/
+.list-style-disc {
+  padding: 0;
+  margin-bottom: 25px;
+
+  li {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/*list style disc css*/
+.list-style-circle {
+  padding: 0;
+  margin-bottom: 25px;
+
+  li {
+    list-style: circle;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+/*ul 2 columner */
+.two-column {
+
+  @include media(">tablet") {
+    column-count: 2;
+    column-gap: 40px;
+  }
+}
+
+/*font family css*/
+.open-sans-bold {
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+.poppins {
+  font-family: 'Poppins';
+}
+
+.poppins-bold {
+  font-weight: bold;
+}
+
+
+
+/*background css*/
+.no-background {
+  background: none !important;
+}
+
+/*background image css*/
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Text color css*/
+
+
+.container {
+  @include media(">tabletl") {
+    max-width: 1260px;
+  }
+}
+
+.container-fluid {
+  @include media(">tabletl") {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+}
+
+main {
+  margin-top: 120px;
+
+  @include media("<tabletl") {
+    margin-top: 72px;
+  }
+
+  @include media("<tablet") {
+    margin-top: 66px;
+  }
+}
+
+@include media-breakpoint-up(xl) { 
+    
+ }
+
+
